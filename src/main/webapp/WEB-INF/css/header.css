@@ -1,0 +1,9 @@
+#navbarSupportedContent {
+    background-color: #000000; /* Override the light background */
+}
+.navbar-brand {
+    font-weight: bold;
+}
+.nav-link.active {
+    color: #007bff; /* Active link color */
+}

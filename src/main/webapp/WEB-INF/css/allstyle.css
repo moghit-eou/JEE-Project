@@ -1,0 +1,1099 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+.nav-item {
+    position: relative;
+}
+.header_bar {
+    background-color: var(--samurai-dark); /* Fond sombre */
+    border-bottom: 2px solid var(--samurai-red); /* Bordure rouge */
+    padding: 1rem 0; /* Espacement interne */
+}
+
+.show_button {
+    background-color: var(--samurai-red);
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+
+.show_button:hover {
+    background-color: #8B0000;
+    transform: translateY(-2px);
+}
+
+/*.nav-link::before {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    left: 50%;*/
+/*    width: 0;*/
+/*    height: 2px;*/
+/*    !*background-color: gray;*!*/
+/*    transform: translateX(-50%);*/
+/*    transition: width 0.3s ease-in-out;*/
+/*}*/
+
+/*.nav-link:hover::before {*/
+/*    width: 100%;*/
+/*}*/
+
+/*.nav-link:hover {*/
+/*!*   background-color: palevioletred;*!*/
+/*    transform: translateY(-2px);*/
+/*    border-radius: 25px;*/
+/*}*/
+
+.active {
+    background-color: transparent; /* Supprimer la couleur de fond */
+    border-radius: 0; /* Supprimer les coins arrondis */
+    border-bottom: 3px solid #8B0000; /* Ajouter une ligne en dessous */
+}
+
+
+
+.active > a {
+    color: red !important;
+    font-weight: 600;
+}
+
+/*!* .nav-link-custom {*!*/
+/*!*     color: #ff5722; !* Exemple de couleur personnalisée *!*!*/
+/*!*     font-weight: bold; !* Texte en gras *!*!*/
+/*!* }*!*/
+/*!*.nav-link-custom:hover {*!*/
+/*!*    color: #ffc107; !* Couleur au survol *!*!*/
+/*!*}*!*/
+
+
+
+
+
+
+/*.nav-link:hover {*/
+/*    padding: 10px;*/
+/*    !*background-color: gray;*!*/
+/*    color: black; !* Change la couleur du texte *!*/
+/*    border-radius: 15px;*/
+/*    transition: all 0.3s ease;*/
+/*    transform: scale(1.1); !* Agrandit légèrement *!*/
+/*}*/
+
+.ls_container {
+    background-color: rgba(0, 0, 0, 0.3) ;
+
+    backdrop-filter: blur();
+
+    border: 1px solid rgba(185, 28, 28, 0.2); /* Bordure rouge */
+    border-radius: 25px; /* Coins arrondis */
+    width: 100%;
+    max-width: 400px; /* Largeur maximale */
+    padding: 2rem; /* Espacement interne */
+    margin: 80px auto; /* Centrage vertical et horizontal */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombre légère */
+    transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1); /* Animation fluide */
+    color: white; /* Couleur du texte */
+}
+
+.ls_container:hover {
+    border-color: var(--samurai-red); /* Bordure rouge au survol */
+    box-shadow: 0 10px 30px rgba(185, 28, 28, 0.3); /* Ombre plus prononcée */
+    transform: translateY(-5px); /* Effet de levée */
+}
+
+.ls_title {
+    color: var(--samurai-red); /* Couleur rouge */
+    font-size: 2rem; /* Taille de police */
+    font-weight: 600; /* Gras */
+    text-align: center; /* Centrage du texte */
+    margin-bottom: 1.5rem; /* Espacement en bas */
+    text-transform: uppercase; /* Texte en majuscules */
+    letter-spacing: 2px; /* Espacement entre les lettres */
+}
+
+.ls_form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.ls_et {
+    background-color: var(--samurai-dark); /* Fond sombre */
+    border: 1px solid rgba(185, 28, 28, 0.2); /* Bordure rouge */
+    border-radius: 8px; /* Coins arrondis */
+    padding: 0.8rem 1rem; /* Espacement interne */
+    color: white; /* Couleur du texte */
+    width: 100%; /* Largeur totale */
+    transition: all 0.3s ease; /* Animation fluide */
+}
+.ls_et:focus {
+    border-color: var(--samurai-red); /* Bordure rouge au focus */
+    box-shadow: 0 0 0 2px rgba(185, 28, 28, 0.25); /* Ombre au focus */
+    outline: none; /* Supprime le contour par défaut */
+}
+
+.ls_btn {
+    background: transparent; /* Fond transparent */
+    border: 2px solid var(--samurai-red); /* Bordure rouge */
+    color: var(--samurai-red); /* Couleur rouge */
+    padding: 0.8rem; /* Espacement interne */
+    border-radius: 8px; /* Coins arrondis */
+    font-weight: 600; /* Gras */
+    cursor: pointer; /* Curseur pointer */
+    transition: all 0.3s ease; /* Animation fluide */
+    text-transform: uppercase; /* Texte en majuscules */
+    letter-spacing: 1px; /* Espacement entre les lettres */
+    margin-top: 1rem; /* Espacement en haut */
+}
+
+.ls_btn:hover {
+    background: var(--samurai-red); /* Fond rouge au survol */
+    color: white; /* Texte blanc au survol */
+    transform: translateY(-2px); /* Effet de levée */
+}
+.ls_text {
+    color: rgba(255, 255, 255, 0.7); /* Texte gris clair */
+    text-align: center; /* Centrage du texte */
+    margin-top: 1rem; /* Espacement en haut */
+}
+
+.ls_text a {
+    color: var(--samurai-red); /* Couleur rouge */
+    text-decoration: none; /* Supprime le soulignement */
+    font-weight: 500; /* Gras moyen */
+    transition: all 0.3s ease; /* Animation fluide */
+}
+
+.ls_text a:hover {
+    color: #ff3333; /* Couleur rouge plus claire au survol */
+    text-decoration: underline; /* Soulignement au survol */
+}
+
+.ls_btn:hover,
+.show_button:hover {
+    background-color: var(--samurai-red);
+    color: white;
+}
+
+.ls_title {
+    width: max-content;
+    margin: 0 auto 10px auto;
+    font-size: x-large;
+}
+
+.ls_err {
+    color: #ff3333; /* Couleur rouge pour les erreurs */
+    text-align: center; /* Centrage du texte */
+    margin-bottom: 1rem; /* Espacement en bas */
+    font-size: 0.9rem; /* Taille de police réduite */
+}
+
+
+
+.c_selectsort_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.c_selectsort_form > div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.c_selectsort_form > .btn {
+    color: darkred;
+    margin: 5px;
+}
+
+.c_pagination {
+    width: max-content;
+    margin: 20px auto;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    /*box-shadow: 0 4px 15px rgba(185, 28, 28, 0.2);*/
+}
+
+.page-link {
+    background-color: transparent !important;
+    color: var(--samurai-red) !important;
+    border: 1px solid var(--samurai-red);
+    padding: 8px 16px;
+    border-radius: 8px !important;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.page-item.active .page-link {
+    background-color: var(--samurai-red) !important;
+    color: white !important;
+    border-color: var(--samurai-red);
+}
+.page-item.disabled .page-link {
+    background-color: rgba(185, 28, 28, 0.1) !important;
+    color: rgba(185, 28, 28, 0.5) !important;
+    border-color: rgba(185, 28, 28, 0.2);
+}
+
+.page-link:hover {
+    background-color: var(--samurai-red) !important;
+    color: white !important;
+    transform: translateY(-2px);
+}
+
+.pagination {
+    display: flex;
+    gap: 5px;
+}
+
+
+/* Dish container styles with new animations */
+
+
+
+.dish_container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background: radial-gradient(circle, rgba(255, 255, 255, 0.3), transparent);*/
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: none;
+}
+
+.dish_container:hover::after {
+    opacity: 1;
+}
+
+
+
+
+
+.dish_text_info > p {
+    margin-bottom: 5px !important;
+}
+
+
+
+
+
+
+/* Error container styles */
+.err_container {
+    font-size: xxx-large;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: max-content;
+    height: 100px;
+}
+
+.err_type {
+    font-size: medium;
+}
+
+.dc_container {
+    display: flex;
+    justify-content: space-between; /* Space between image and other content */
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent white background */
+    backdrop-filter: blur(10px);
+    margin: 20px;
+}
+
+.dc_container img {
+    border-radius: 10px;
+    margin-left: 0px; /* Add some space to the left of the image */
+}
+
+
+
+.dc_img {
+    border-radius: var(--dish-container-corner-radius) 0 0 var(--dish-container-corner-radius);
+    height: 200px;
+    width: 150px;
+    object-fit: cover;
+}
+
+/* Account styles */
+.a_login {
+    margin: 15px 15px 0;
+    font-size: xxx-large;
+    font-weight: 600;
+}
+
+
+.a_changepass {
+    margin-left: 15px;
+}
+
+.a_rec_container {
+    margin: 30px auto auto;
+    width: 90%;
+}
+
+.a_rec_title {
+    font-size: xx-large;
+}
+
+.u-form {
+    margin: 0;
+}
+
+
+
+:root {
+    --samurai-red: #B91C1C;
+    --samurai-dark: #000000;
+    --card-bg: rgba(0, 0, 0, 0.95);
+    --dish-container-corner-radius: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url("https://imgs.search.brave.com/crfb3g0OkP3IVlNG3Mdqcfyyt7BRyYlMDXqYNaMAZ8k/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9kb251dC1ibGFj/ay1wbGF0ZS13aXRo/LWJsYWNrLWN1dGxl/cnktYmxhY2stYmFj/a2dyb3VuZC10b3At/dmlld185OTAwNC05/OS5qcGc_c2VtdD1h/aXNfaHlicmlk");
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}
+
+.navbar {
+    background-color: black;
+    padding: 1.2rem 4rem;
+    border-bottom: 2px solid var(--samurai-red);
+}
+
+.navbar-brand {
+    text-align: left;
+    color: var(--samurai-red) !important;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.navbar-nav > li:nth-child(1),
+.navbar-nav > li:nth-child(2) {
+    margin-right: auto;
+}
+
+.navbar-nav > li:nth-child(3),
+.navbar-nav > li:nth-child(4) {
+    margin-left: auto;
+}
+
+.nav-link {
+    color: var(--samurai-red) !important;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.7rem 1.5rem;
+    position: relative;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--samurai-red);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+.nav-link:hover {
+    background-color: transparent;
+    color: var(--samurai-red) !important;
+}
+body{
+    font-family: 'Sawarabi Mincho', serif;
+
+}
+
+.c_dishes {
+    /*background-color: black;*/
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.dish_container {
+
+    backdrop-filter: blur(10px); /* Apply blur */
+    border-radius: var(--dish-container-corner-radius);
+    overflow: hidden;
+    border: 1px solid var(--samurai-red);
+    transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dish_container:hover {
+    transform: translateY(-10px);
+    border-color: var(--samurai-red);
+    box-shadow: 0 10px 30px rgba(185, 28, 28, 0.3);
+}
+
+.dish_img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: all 0.4s ease;
+}
+
+.dish_container:hover .dish_img {
+    transform: scale(1.05);
+}
+
+.dish_text_info {
+    padding: 1.5rem;
+    color: white;
+}
+
+.dish_name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--samurai-red);
+}
+
+.dish_description {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.dish_weight {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.8rem;
+}
+
+.dish_price {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--samurai-red);
+    margin: 1rem 0;
+}
+
+.dish_addtocart {
+    width: 100%;
+    padding: 0.8rem;
+    background: transparent;
+    border: 2px solid var(--samurai-red);
+    color: var(--samurai-red);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.dish_addtocart:hover {
+    background: var(--samurai-red);
+    color: white;
+}
+
+
+.c_category_name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--samurai-red);
+    text-align: center;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.c_header {
+    background: linear-gradient(45deg, #000000, var(--samurai-red));
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.form-select {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+
+    border-radius: 8px;
+    padding: 0.5rem 2rem 0.5rem 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.form-select:hover, .form-select:focus {
+    border-color: var(--samurai-red);
+    box-shadow: 0 0 0 2px rgba(185, 28, 28, 0.25);
+}
+
+.btn-outline-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-secondary:hover {
+    background: var(--samurai-red);
+    border-color: var(--samurai-red);
+    color: white;
+    transform: translateY(-2px);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
+
+.cart_empty {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--samurai-red);
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.cart_item .dish_name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--samurai-red);
+    margin-bottom: 0.5rem;
+}
+
+.cart_item .dish_price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--samurai-red);
+    margin: 0.5rem 0;
+}
+
+.cart_item .dish_quantity {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.cart_item .dish_total {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--samurai-red);
+    margin-top: 1rem;
+}
+
+
+.cart_order_button, .delete_button, .save_button {
+    background: transparent;
+    border: 2px solid var(--samurai-red);
+    color: var(--samurai-red);
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 1rem auto;
+    display: block;
+}
+.cart_order_button:hover, .delete_button:hover, .save_button:hover {
+    background: var(--samurai-red);
+    color: white;
+    transform: translateY(-2px);
+}
+.login-page {
+    background-image: url("https://imgs.search.brave.com/dLTxFw-__s3w3aD4SRSeaqhOuJW3RcPqtaScFjNWxh0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9zcG9vbi13aXRo/LWJsYWNrLXJlZC1j/YXZpYXItd29vZGVu/LWJhY2tncm91bmQt/dG9wLXZpZXctZnJl/ZS1zcGFjZS10ZXh0/XzE4NzE2Ni0zNDk3/OS5qcGc_c2VtdD1h/aXNfaHlicmlk");
+    backdrop-filter: blur();
+}
+
+
+.dc_count input {
+    background-color: var(--samurai-dark); /* Fond sombre */
+    color: white; /* Texte blanc */
+    border: 2px solid var(--samurai-red); /* Bordure rouge */
+    border-radius: 8px; /* Coins arrondis */
+    padding: 0.7rem; /* Espacement interne uniforme */
+    font-size: 1.2rem; /* Taille de la police */
+    text-align: center; /* Centrage du texte */
+    width: 120px; /* Largeur fixe */
+    height: 50px; /* Hauteur fixe */
+    transition: all 0.3s ease; /* Animation fluide */
+    outline: none; /* Supprime le contour par défaut */
+    margin: 0.5rem; /* Espacement autour des champs */
+    box-sizing: border-box; /* Inclut la bordure et le padding dans les dimensions */
+}
+
+.dc_count input:focus {
+    border-color: var(--samurai-red); /* Bordure rouge plus visible au focus */
+    box-shadow: 0 0 0 2px rgba(185, 28, 28, 0.25); /* Ombre rouge au focus */
+}
+
+/* Alignement des boutons */
+.dc_count {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    gap: 1rem; /* Espacement entre les boutons */
+    align-items: center; /* Centre verticalement */
+}
+
+/*.about-container {*/
+/*    width: 70%;*/
+/*    margin: 2rem auto;*/
+/*    text-align: center;*/
+/*    padding: 2rem;*/
+/*    border: 2px solid #ddd;*/
+/*    border-radius: 10px;*/
+/*    background-image: url('/img/rojo.jpg'); !* Ajouter une image *!*/
+/*    background-size: cover; !* Pour couvrir tout le conteneur *!*/
+/*    background-position: center; !* Centrer l'image *!*/
+/*    background-repeat: no-repeat; !* Ne pas répéter l'image *!*/
+/*    color: white; !* Contraste pour le texte *!*/
+/*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/
+/*}*/
+
+
+
+
+#navbarSupportedContent {
+    background-color: black;
+    backdrop-filter: blur(5px);
+}
+/* Général */
+
+
+/* Conteneur principal */
+/* Général */
+
+/* Conteneur principal */
+/*.dc_container {*/
+/*    background-color: darkred; !* Rouge vif *!*/
+/*    border-radius: 10px;*/
+/*    padding: 20px;*/
+/*    max-width: 1400px;*/
+/*    width: 90%;*/
+/*    margin: 50px;*/
+/*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);*/
+/*}*/
+
+/* Texte pour un panier vide */
+.cart_empty {
+    color: #fff; /* Texte blanc */
+    font-size: 1.2em;
+    text-align: center;
+    margin: 50px 0;
+    font-weight: bold;
+}
+
+/* Bouton de commande */
+form input[type="submit"] {
+    background-color: #000; /* Fond noir */
+    color: #ff0000; /* Texte rouge */
+    border: 2px solid #ff0000;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #ff0000; /* Fond rouge */
+    color: #000; /* Texte noir */
+}
+
+/* Articles dans le panier */
+.dish_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red; /* Fond blanc */
+    color: #000; /* Texte noir */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dish_item img {
+    max-width: 50px;
+    border-radius: 5px;
+}
+
+.dish_item .dish_details {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.dish_item .dish_price {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+.container {
+    background-color: #ff0000; /* Rouge vif */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 1200px;
+    width: 90%;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: #fff; /* Texte blanc */
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent white background */
+    backdrop-filter: blur(10px);
+}
+
+.table th, .table td {
+    padding: 10px;
+    border: 1px solid #fff; /* Bordure blanche */
+    text-align: center;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+    background-color: #222; /* Lignes impaires grises */
+}
+
+.table-striped tbody tr:nth-child(even) {
+    background-color: #333; /* Lignes paires légèrement plus foncées */
+}
+
+/* Formulaire */
+form {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+form select {
+    background-color: #000; /* Fond noir */
+    color: #ff0000; /* Texte rouge */
+    border: 2px solid #ff0000;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+form select:hover {
+    background-color: #ff0000; /* Fond rouge */
+    color: #000; /* Texte noir */
+}
+
+form input[type="submit"] {
+    background-color: #000; /* Fond noir */
+    color: #ff0000; /* Texte rouge */
+    border: 2px solid #ff0000;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #ff0000; /* Fond rouge */
+    color: #000; /* Texte noir */
+}
+
+/* Bouton pour changer le statut */
+form input[type="submit"].status-btn {
+    background-color: #222; /* Fond gris foncé */
+    color: #ff0000; /* Texte rouge */
+    border: 2px solid #ff0000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+form input[type="submit"].status-btn:hover {
+    background-color: #ff0000; /* Fond rouge */
+    color: #000; /* Texte noir */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .table th, .table td {
+        font-size: 0.9em;
+        padding: 5px;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    form select, form input[type="submit"] {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+.a_login {
+    color: #ff0000; /* Rouge vif */
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.a_changepass {
+    color: #ff0000; /* Rouge vif */
+    text-decoration: none;
+    font-size: 1em;
+    margin: 10px;
+    padding: 8px 15px;
+    border: 2px solid #ff0000;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.a_changepass:hover {
+    background-color: #ff0000; /* Fond rouge */
+    color: #000; /* Texte noir */
+}
+
+/* Conteneur des reçus */
+.a_rec_container {
+    background-color: darkred; /* Rouge vif */
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.a_rec_title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: #fff; /* Texte blanc */
+}
+
+.table th, .table td {
+    padding: 10px;
+    border: 1px solid #fff; /* Bordure blanche */
+    text-align: center;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+    background-color: #222; /* Lignes impaires grises */
+}
+
+.table-striped tbody tr:nth-child(even) {
+    background-color: #333; /* Lignes paires légèrement plus foncées */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .a_rec_container {
+        padding: 15px;
+    }
+
+    .a_changepass {
+        font-size: 0.9em;
+        padding: 6px 12px;
+    }
+
+    .table th, .table td {
+        font-size: 0.9em;
+        padding: 5px;
+    }
+}
+
+/* Conteneur pour aligner les boutons */
+.a_buttons_container {
+    background-color: black;
+    backdrop-filter: blur();
+    display: flex;
+    justify-content: flex-end; /* Aligne les éléments à droite */
+    gap: 10px; /* Espace entre les boutons */
+    width: 100%;
+    margin-top: 10px;
+    padding-right: 20px; /* Ajuste l'espacement du bord droit */
+}
+
+/* Boutons */
+.a_changepass {
+    color: #ff0000; /* Rouge vif */
+    text-decoration: none;
+    font-size: 1em;
+    padding: 8px 15px;
+    border: 2px solid #ff0000;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.a_changepass:hover {
+    background-color: #ff0000; /* Fond rouge */
+    color: #000; /* Texte noir */
+}
+.a_login {
+    font-family: "Dubai Light" , sans-serif;
+    font-size: 40px; /* ajustez la taille selon votre préférence */
+}
+<!--  -->
+
+/* Import Google Fonts */
+
+/* Conteneur principal */
+.about-container {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    margin: 2rem auto;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: row; /* Disposition horizontale */
+    justify-content: space-between; /* Espacement entre la description et l'image */
+    align-items: center; /* Centrer verticalement l'image et la description */
+}
+
+/* Pseudo-element for black blur overlay */
+.about-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    filter: blur(5px); /* Apply blur directly to the background */
+    border-radius: 25px; /* Match the border radius of the container */
+    z-index: 0; /* Ensure the overlay is behind the content */
+}
+
+/* Ensure the content inside is above the overlay */
+.about-container > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Apply the hand-written font and shared color */
+/* Police partagée */
+.about-description {
+    font-family: 'Dancing Script', cursive; /* Appliquer une police manuscrite */
+    color: whitesmoke; /* Couleur partagée */
+}
+
+/* Titre */
+
+
+/* Description */
+.about-description {
+    font-size: 1.8rem;
+    text-align: left; /* Aligner le texte de la description à gauche */
+    font-weight: 500;
+    line-height: 1.8;
+    max-width: 50%; /* Limite la largeur de la description pour ne pas qu'elle occupe trop d'espace */
+    margin-right: 20px; /* Espacement entre la description et l'image */
+    margin-left: 150px;
+    box-sizing: border-box; /* Assure que le padding et la largeur sont bien gérés */
+}
+
+/* Animation : Effet d'entrée avec fade-in et scroll-up */
+.about-container {
+    display: flex; /* Utilise Flexbox pour disposer les éléments horizontalement */
+    align-items: center; /* Centrer verticalement l'image et la description */
+    justify-content: flex-start; /* Aligner les éléments à gauche */
+    width: 100%; /* Largeur complète */
+    max-width: 1600px; /* Limite la largeur maximale */
+    margin: 10px auto;
+    padding: 10px;
+    text-align: left;
+    color: #333;
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out; /* Animation */
+    opacity: 0;
+    transform: translateY(50px); /* Effet d'entrée */
+}
+
+/* Appliquer l'animation quand l'élément devient visible */
+.about-container.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Image à droite */
+.about-image {
+    width: 350px; /* Largeur de l'image */
+    height: auto; /* Garder les proportions de l'image */
+    margin-right: 150px;
+    border-radius: 8px; /* Bord arrondi */
+}
