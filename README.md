@@ -35,5 +35,8 @@
 <details>
 <summary>Show</summary>
 
+<img src="https://i.imgur.com/JtOFO8q.png" width="800" /><br>
+<img src="https://i.imgur.com/W2VMLkw.png" width="800" /><br>
+<img src="https://i.imgur.com/tmr6K1d.png" width="800" /><br>
 
 </details>
