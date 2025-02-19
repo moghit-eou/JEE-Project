@@ -40,3 +40,14 @@
 <img src="https://i.imgur.com/tmr6K1d.png" width="800" /><br>
 
 </details>
+
+## Architecture
+
+- **Java EE**
+  - Servlets
+  - Filters
+  - Listeners
+  - JSP
+- **MySQL** (used standard JDBC for connection)
+- **Servlet Container** (Recommended Tomcat v.9.0.52)
+- MVC Pattern Overview
