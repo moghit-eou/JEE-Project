@@ -4,7 +4,7 @@
 
 [![My Skills](https://skillicons.dev/icons?i=html,css,js,java,mysql&theme=light)](https://skillicons.dev)
 
-<p align="center"><img src="https://i.imgur.com/mwArg8O.png" height ="205" width="574"  /></p><br>
+<p align="center"><img src="https://i.imgur.com/mwArg8O.png" height ="305" width="574"  /></p><br>
 
 ### Key Features:
 
